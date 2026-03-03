@@ -1,4 +1,4 @@
-export function loqReq(req, _res, next) {
+export function logReq(req, _res, next) {
   console.log(
     `${req.method} -- ${req.url} -- ${new Date().toLocaleTimeString()}`,
   );
