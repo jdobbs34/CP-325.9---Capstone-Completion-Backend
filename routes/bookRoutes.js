@@ -1,8 +1,21 @@
 import express from "express";
 import Books from "../models/bookSchema.js";
-//import data from "..utilities/data.js";
+import data from "../utilities/data.js"
 
 const router = express.Router();
+
+router.get("/seed", async (req, res) => {
+  try {
+    await Books.deleteMany({})
+    await Books.create(data)
+
+    res.send("Seeded Database")
+  } catch (error) {
+    console.error(error.message)
+    res.send("Send failed")
+  }
+}
+)
 
 // Create
 router.route("/").post(async(req, res) => {
