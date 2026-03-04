@@ -2,15 +2,15 @@ import mongoose from "mongoose"
 
 const bookSchema = new mongoose.Schema ({
   title: {
-    type: Sting,
+    type: String,
     required: true
   },
   author: {
-    type: Sting,
+    type: String,
     required: true
   },
   status: {
-    type: Sting,
+    type: String,
     enum: ['want to read', 'reading', 'finished'],
     default: 'want to read'
   }, 
@@ -21,15 +21,15 @@ const bookSchema = new mongoose.Schema ({
     default: null
   },
   notes: {
-    type: Sting,
+    type: String,
     default: ''
   },
   cover: {
-    type: Sting,
+    type: String,
     default: ''
   },
   googleId: {
-    type: Sting,
+    type: String,
     default: ''
   }
 }, {timestamps: true})
