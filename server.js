@@ -3,6 +3,7 @@ import express from "express";
 import dotenv from "dotenv";
 import { logReq, globalErr } from "./middleware/middlewares.js";
 import connectDB from "./db/conn.js";
+import bookRoutes from "./routes/bookRoutes.js";
 import cors from "cors";
 
 // Setups
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(logReq);
 
 // Routes
+app.use("/api/books", bookRoutes);
 
 // Global Err
 app.use(globalErr);
