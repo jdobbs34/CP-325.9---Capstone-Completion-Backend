@@ -37,7 +37,6 @@ router.route("/:id").put(async(req, res) => {
 
     if (!deletedBook) return res.status(404).json({ error: "Book Not Found" })
 
-
   res.json(deletedBook)
 })
 
@@ -49,7 +48,6 @@ router.route("/:id").put(async(req, res) => {
 
   res.json(book)
 })
-
 
 export default router;
 
