@@ -35,3 +35,12 @@ const bookSchema = new mongoose.Schema ({
 }, {timestamps: true})
 
 export default mongoose.model("Books", bookSchema)
+
+// {
+//     "title": "Avengers",
+//     "author": "Stan Lee",
+//     "status": "reading",
+//     "rating": "5",
+//     "notes": "Boom",
+//     "cover": ""
+// }
