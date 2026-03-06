@@ -59,7 +59,7 @@ Delete
 
 Route for seed
 
-- GET - /api/book
+- GET - /api/book/seed
 
 ## How to Run Locally
 
