@@ -1,4 +1,4 @@
-# Capstone BookTracker Project - Frontend
+# Capstone BookTracker Project - Backend
 
 ## BookTracker App
 
