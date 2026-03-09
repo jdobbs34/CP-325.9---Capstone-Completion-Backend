@@ -9,8 +9,8 @@ import cors from "cors";
 // Setups
 dotenv.config();
 const app = express();
-const PORT = process.env.PORT || 3000; 
-// const PORT = process.env.PORT ;  //  // Use this when not deployedUse this when deployed
+// const PORT = process.env.PORT || 3000; // Use this when not deployed
+const PORT = process.env.PORT ;  //  // Use this when deployed
 connectDB();
 
 // Middleware
