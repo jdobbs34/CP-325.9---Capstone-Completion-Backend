@@ -22,7 +22,7 @@ A full stack React web application that lets you search for Books from Google, s
 - React Router DOM
 - Axios
 - CSS
-- Google API (https://www.googleapis.com)
+- Google API (https://www.googleapis.com/books/v1/volumes?q)
 - MongoDB a.k.a Da Gooooooose
 
 ### Backend
